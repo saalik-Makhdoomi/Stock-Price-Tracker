@@ -1,13 +1,13 @@
 document.getElementById('stock-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    require('dotenv').config();
-    
     const stockSymbol = document.getElementById('stock-symbol').value;
-    const apiKey = process.env.API_KEY;
-    
-    const apiUrl = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apiKey=${API_KEY}`;
-    
+
+    // Use your actual API key directly or through a build tool
+    const apiKey = "DUE633PCCOR6C948"; // Replace with your actual API key
+
+    const apiUrl = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey=${apiKey}`;
+
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
