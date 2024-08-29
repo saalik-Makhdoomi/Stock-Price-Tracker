@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width:70%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button{
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#stock-data {
+    margin-top: 20px;
+}
+
+#stock-price {
+    font-size: 18px;
+    color: #555;
+}
